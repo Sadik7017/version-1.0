@@ -1,0 +1,154 @@
+ body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      /* background-color: #f1f5f9; */
+    }
+
+    .header-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background-color: black;
+      z-index: 1030;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      max-width: 500px;
+      margin: 0 20px;
+    }
+
+    .search-bar input {
+      border-radius: 50px;
+    }
+
+    .search-bar .btn {
+      border-radius: 50%;
+    }
+
+    .bg-pink {
+      background-color: #f06292;
+    }
+
+    .sidebar {
+      width: 70px;
+      background: white;
+      color: black;
+      min-height: 100vh;
+      transition: width 0.3s ease;
+      overflow: hidden;
+      position: fixed;
+      top: 60px;
+    }
+    .sidebar a.text-primary {
+  color: #0d6efd !important;
+}
+.sidebar a.fw-bold {
+  font-weight: bold;
+}
+
+
+    .sidebar:hover {
+      width: 180px;
+    } 
+
+    .sidebar a {
+      color: black;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .sidebar a i {
+      font-size: 20px;
+      width: 30px;
+      text-align: center;
+    }
+
+    .sidebar a span {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .sidebar:hover a span {
+      opacity: 1;
+    }
+
+    .main-content {
+      margin-left: 70px;
+      margin-top: 60px;
+      padding: 20px;
+      transition: margin-left 0.3s ease;
+    }
+
+    .sidebar:hover ~ .main-content {
+      margin-left: 250px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: beige;
+    }
+
+    .stat-up {
+      color: green;
+      font-size: 12px;
+    }
+
+    .stat-value {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .chart-placeholder {
+      background: #fff;
+      border-radius: 12px;
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccc;
+      border: 1px dashed #ccc;
+    }
+
+    .date-filter {
+      text-align: end;
+    }
+
+    .date-filter input {
+      max-width: 160px;
+      display: inline-block;
+    }
+
+    .dashboard-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .legend-box {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    display: inline-block;
+  }
+
+  .card h5 {
+  font-size: 0.75rem;
+}
+.chart-title {
+  font-size: 1rem;
+}
+
+
+
+
+
