@@ -72,7 +72,7 @@
       <a href="{{ route('admin.leads.index') }}" class="flex items-center gap-2 p-2 rounded {{ request()->is('admin/leads*') ? 'text-blue-600 font-bold bg-blue-50' : 'hover:bg-gray-100' }}">
         <i class="bi bi-person-lines-fill"></i><span>Leads</span>
       </a>
-      <a href="{{ url('setting') }}" class="flex items-center gap-2 p-2 rounded {{ request()->is('setting') ? 'text-blue-600 font-bold bg-blue-50' : 'hover:bg-gray-100' }}">
+      <a href="{{ route('admin.settings.index') }}" class="flex items-center gap-2 p-2 rounded {{ request()->is('admin/setting') ? 'text-blue-600 font-bold bg-blue-50' : 'hover:bg-gray-100' }}">
         <i class="bi bi-gear"></i><span>Settings</span>
       </a>
     </div>
